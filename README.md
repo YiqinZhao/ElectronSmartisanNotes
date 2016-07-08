@@ -8,10 +8,11 @@ A third part Smartisan Notes client built with electron.
 This project is still under development, and there are so many bugs to fix.
 
 # TODO
-* Build removble no border window.
 * Packup
 * Better icon
 * Better openning animation
+* Network problem
+* Add login function
 
 # License
 This project is under MIT License
