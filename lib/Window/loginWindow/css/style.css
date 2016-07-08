@@ -21,8 +21,24 @@ body { margin: 0; border: 0; padding: 0; background-color: #fffcf6;}
     margin-bottom: 10px;
 }
 
+.des-container {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
 .login-des {
     font-size: 20px;
+    margin: 0 1px;
+    float: left;
+    letter-spacing: 0;
+    opacity: 0;
+    transition: all 300ms linear;
+    transform: scale(0.8);
+}
+
+.login-des-active {
+    transform: scale(1);
     opacity: 0.8;
-    margin: 0;
 }

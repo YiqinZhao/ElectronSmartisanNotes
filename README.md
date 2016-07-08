@@ -1,4 +1,4 @@
-# ElectronSmartisanNotes
+# Electron Smartisan Notes
 
 ![ElectronSmartisanNotes](https://raw.githubusercontent.com/HawkinsZhao/ElectronSmartisanNotes/master/scrrenshots/img1.pn://raw.githubusercontent.com/HawkinsZhao/ElectronSmartisanNotes/master/scrrenshots/img1.png)
 

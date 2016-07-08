@@ -75,11 +75,18 @@ app.on('activate', function () {
 })
 
 ipcMain.on('notes-did-login', (event, arg) => {
-    if (arg) {
+    if (arg == 'true') {
         loginWindow.webContents.send('page-will-load', 'true')
         setTimeout(() => {
             loginWindow.hide()
             noteWindow.show()
         }, 2000)
+    }
+    else {
+        loginWindow.webContents.send('page-will-load', 'false')
+        setTimeout(() => {
+            loginWindow.hide()
+            noteWindow.show()
+        }, 1500)
     }
 })
