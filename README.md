@@ -1,7 +1,5 @@
 # ElectronSmartisanNotes
 
-![ElectronSmartisanNotes](https://raw.githubusercontent.com/HawkinsZhao/ElectronSmartisanNotes/master/scrrenshots/img1.pn://raw.githubusercontent.com/HawkinsZhao/ElectronSmartisanNotes/master/scrrenshots/img2.png)
-
 ![ElectronSmartisanNotes](https://raw.githubusercontent.com/HawkinsZhao/ElectronSmartisanNotes/master/scrrenshots/img1.pn://raw.githubusercontent.com/HawkinsZhao/ElectronSmartisanNotes/master/scrrenshots/img1.png)
 
 A third part Smartisan Notes client built with electron.
@@ -14,3 +12,6 @@ This project is still under development, and there are so many bugs to fix.
 * Packup
 * Better icon
 * Better openning animation
+
+# License
+This project is under MIT License
