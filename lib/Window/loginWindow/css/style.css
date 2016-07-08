@@ -1,0 +1,28 @@
+body { margin: 0; border: 0; padding: 0; background-color: #fffcf6;}
+* { -webkit-app-region: drag;}
+
+
+.login-notes {
+    width: 60%;
+    margin: 60px auto;
+    display: block;
+}
+
+.login-text {
+    text-align: center;
+    font-family: sans-serif;
+    letter-spacing: 5px;
+    color: #635752;
+}
+
+.login-info {
+    opacity: 0.9;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.login-des {
+    font-size: 20px;
+    opacity: 0.8;
+    margin: 0;
+}

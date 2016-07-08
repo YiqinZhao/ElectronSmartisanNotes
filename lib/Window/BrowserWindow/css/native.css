@@ -1,0 +1,34 @@
+/*body::before {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: blue;
+    z-index: 10002;
+    content: "";
+}*/
+
+body::after {
+    position: absolute;
+    width: 100%;
+    height: 62px;
+    z-index: 10001;
+    content: "";
+    -webkit-app-region: drag;
+}
+
+.layout-wrapper::before {
+    position: absolute;
+    width: 200px;
+    height: 62px;
+    background: -webkit-linear-gradient(top,#716661,#5F5450);
+    z-index: 10000;
+    content: ""
+}
+
+.globalheader {
+    display: none;
+}
+
+.app_wrap {
+    top: 0;
+}
