@@ -1,28 +1,95 @@
-/*body::before {
+/*
+    Notice:
+
+    This file containes some ugly codes,
+    if you don't wanna your eyes get hurt,
+    plese close it.
+
+    And why I write such ugly codes?
+    The problem is when I set the title bar rigion
+    draggble, the buttons are disabled.
+    I don't have any better solution, so I use some
+    tricky tag like ::before and ::after to make some
+    patch, and patch them on the title bar.
+
+    If you uncomment all the background-color, you
+    will meet a very nice title you have ever seen.
+*/
+
+
+body::before {
     position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: blue;
-    z-index: 10002;
-    content: "";
-}*/
+    width: 40%;
+    min-width: 225px;
+    height: 62px;
+    right: calc(381px + 65% - 705px + 205px + 180px);
+    /*
+        Well, that means app_wrap::before's right + buttons width
+    */
+    background: -webkit-linear-gradient(top,#716661,#5F5450);
+    /*background-color: red;*/
+    z-index: 10000;
+    -webkit-app-region: drag;
+    content: ""
+}
 
 body::after {
     position: absolute;
-    width: 100%;
     height: 62px;
     z-index: 10001;
-    content: "";
     -webkit-app-region: drag;
+    right: 381px;
+    width: calc(65% - 705px);
+    /*background-color: blue;*/
+    content: "";
 }
 
 .layout-wrapper::before {
     position: absolute;
-    width: 200px;
+    width: 100%;
+    height: 10px;
+    z-index: 10001;
+    /*background-color: #000;*/
+    -webkit-app-region: drag;
+    content: "";
+}
+
+.layout-wrapper::after {
+    position: absolute;
+    width: 100%;
+    top: 51px;
+    height: 11px;
+    z-index: 10001;
+    /*background-color: wheat;*/
+    -webkit-app-region: drag;
+    content: "";
+}
+
+.app_wrap::before {
+    position: absolute;
+    right: calc(381px + 65% - 705px + 205px);
+    /*
+        Well, this is awful but awesome.
+        This means right space of body::after + width of body::after + buttons width
+        Isn't that amazing?
+    */
+    width: 24px;
     height: 62px;
-    background: -webkit-linear-gradient(top,#716661,#5F5450);
-    z-index: 10000;
-    content: ""
+    z-index: 10001;
+    /*background-color: green;*/
+    -webkit-app-region: drag;
+    content: "";
+}
+
+.app_wrap::after {
+    position: absolute;
+    right: 0;
+    width: 12px;
+    height: 62px;
+    z-index: 10001;
+    /*background-color: yellow;*/
+    -webkit-app-region: drag;
+    content: "";
 }
 
 .globalheader {
