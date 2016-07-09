@@ -8,6 +8,7 @@ A third part Smartisan Notes client built with electron.
 This project is still under development, and there are so many bugs to fix.
 
 # TODO
+* Add muti-language support.
 * Packup
 * Better icon
 * Better openning animation
