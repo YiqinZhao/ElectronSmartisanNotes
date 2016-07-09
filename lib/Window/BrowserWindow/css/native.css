@@ -14,6 +14,10 @@
 
     If you uncomment all the background-color, you
     will meet a very nice title you have ever seen.
+
+    But you may need to know, this app is actually a hack.
+    So there will be a lot of amazing things and they may
+    become ugly and dirt.
 */
 
 
@@ -26,8 +30,9 @@ body::before {
     /*
         Well, that means app_wrap::before's right + buttons width
     */
-    background: -webkit-linear-gradient(top,#716661,#5F5450);
+    /*background: -webkit-linear-gradient(top,#716661,#5F5450);*/
     /*background-color: red;*/
+    /*opacity: 0;*/
     z-index: 10000;
     -webkit-app-region: drag;
     content: ""
@@ -98,4 +103,42 @@ body::after {
 
 .app_wrap {
     top: 0;
+}
+
+.logout-mask {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #fffcf6;
+    z-index: 10002;
+    -webkit-app-region: drag;
+    transition: all 300ms linear;
+    opacity: 0;
+    transform: scale(1.2);
+}
+
+.logout-mask-active {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.logout-mask > img {
+    display: block;
+    margin: 100px auto;
+    margin-bottom: 60px;
+}
+
+.logout-mask > p {
+    text-align: center;
+    font-family: sans-serif;
+    letter-spacing: 5px;
+    color: #635752;
+    font-size: 35px;
+    opacity: 0.8;
+    font-weight: 300;
+}
+
+.logout-mask > p:last-child {
+    font-size: 25px;
+    margin-top: 20px;
 }
