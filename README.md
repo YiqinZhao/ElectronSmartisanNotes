@@ -11,7 +11,6 @@ This project is still under development, and there are so many bugs to fix.
 * Packup
 * Better icon
 * Better openning animation
-* Network problem
 * Add login function
 
 # License
