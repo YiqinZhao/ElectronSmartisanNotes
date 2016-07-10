@@ -9,10 +9,7 @@ This project is still under development, and there are so many bugs to fix.
 
 # TODO
 * Add muti-language support.
-* Packup
 * Better icon
-* Better openning animation
-* Add login function
 
 # License
 This project is under MIT License

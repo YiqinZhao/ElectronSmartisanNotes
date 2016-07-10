@@ -1,0 +1,23 @@
+body { margin: 0; border: 0; padding: 0; background-color: #fffcf6;}
+* { -webkit-app-region: drag;}
+
+img { display: block; margin: 40px auto; width: 60%;}
+
+.about-text {
+    text-align: center;
+    font-family: sans-serif;
+    letter-spacing: 5px;
+    color: #635752;
+}
+
+.about-info {
+    opacity: 0.9;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.about-des {
+    font-size: 14px;
+    margin: 0 1px;
+    letter-spacing: 0;
+}

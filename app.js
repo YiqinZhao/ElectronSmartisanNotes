@@ -3,12 +3,12 @@ const electron = require('electron')
 const path = require('path')
 const {app, BrowserWindow, webFrame, ipcMain} = require('electron')
 
-let noteWindow = null, loginWindow = null
+let noteWindow = null, loginWindow = null, aboutWindow = null
 var internetFlag = false
 
 function createWindow(isConnected) {
     loginWindow = new BrowserWindow({
-        title: "登录",
+        title: '登录',
         width: 350,
         height: 500,
         frame: true,
@@ -122,4 +122,39 @@ ipcMain.on('login-did-show', (event, arg) => {
     if (!internetFlag) {
         loginWindow.webContents.send('internet-connected', 'false')
     }
+})
+
+ipcMain.on('need-show-about', (event, arg) => {
+    if (aboutWindow != null) {
+        aboutWindow.focus()
+        return
+    }
+    aboutWindow = new BrowserWindow({
+        title: '关于',
+        width: 350,
+        height: 500,
+        frame: true,
+        center: true,
+        parent: noteWindow,
+        maximizable: false,
+        alwaysOnTop: true,
+        resizable: false,
+        autoHideMenuBar: true,
+        titleBarStyle: 'hidden-inset',
+        webPreferences: {
+            javascript: true,
+            webSecurity: false,
+            nodeIntegration: false
+        }
+    })
+
+    aboutWindow.loadURL(`file://${__dirname}/lib/Window/About/about.html`)
+    // aboutWindow.openDevTools()
+    aboutWindow.on('closed', () => {
+        aboutWindow = null
+    })
+})
+
+ipcMain.on('app-will-close', (event, arg) => {
+    app.quit()
 })
