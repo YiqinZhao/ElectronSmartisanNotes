@@ -4,12 +4,21 @@
 
 A third part Smartisan Notes client built with electron.
 
-# Note
+# Attention
 This project is still under development, and there are so many bugs to fix.
+
+# Features
+* Application-like UI
+* Scaled UI with smaller controllers
+* Native integration
+* Adjusted UI
 
 # TODO
 * Add muti-language support.
-* Better icon
+* Better icon.
+
+* Muti account support.
+
 
 # License
 This project is under MIT License
