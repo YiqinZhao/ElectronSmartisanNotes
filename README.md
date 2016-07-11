@@ -29,6 +29,8 @@ cd ElectronSmartisanNotes
 npm install && npm start
 ```
 
+# In Progress
+Contacting Smartisan Tech for servel questions.
 
 # TODO
 * Add muti-language support.
