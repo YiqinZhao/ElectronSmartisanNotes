@@ -32,6 +32,8 @@ npm install && npm start
 # In Progress
 Contacting Smartisan Tech for servel questions.
 
+Now successful tested for package app for macOS.
+
 # TODO
 * Add muti-language support.
 * Better icon.
