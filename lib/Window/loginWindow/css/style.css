@@ -3,9 +3,12 @@ body { margin: 0; border: 0; padding: 0; background-color: #fffcf6;}
 
 
 .login-notes {
-    width: 60%;
-    margin: 60px auto;
+    width: 220px;
+    height: 220px;
+    background-size: 220px;
+    margin: 60px auto 40px auto;
     display: block;
+    background-image: -webkit-image-set(url(../../Common/img/Notes.png) 1x,url(../../Common/img/Notes@2x.png) 2x);
 }
 
 .login-text {

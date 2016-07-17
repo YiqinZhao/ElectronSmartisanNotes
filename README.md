@@ -30,9 +30,7 @@ npm install && npm start
 ```
 
 # In Progress
-Contacting Smartisan Tech for servel questions.
-
-Now successful tested for package app for macOS.
+You may have noticed, there are few commits this days, since I sucked in other projects and this project needs to rebuild. Don't worry, I will be back soon.
 
 # TODO
 * Add muti-language support.

@@ -1,8 +1,6 @@
 body { margin: 0; border: 0; padding: 0; background-color: #fffcf6;}
 * { -webkit-app-region: drag;}
 
-img { display: block; margin: 40px auto; width: 60%;}
-
 .about-text {
     text-align: center;
     font-family: sans-serif;
@@ -20,4 +18,20 @@ img { display: block; margin: 40px auto; width: 60%;}
     font-size: 14px;
     margin: 0 1px;
     letter-spacing: 0;
+}
+
+.about-img {
+    width: 220px;
+    height: 220px;
+    background-image: -webkit-image-set(url(../../Common/img/Notes.png) 1x,url(../../Common/img/Notes@2x.png) 2x);
+    margin: 60px auto 40px auto;
+    background-size: 220px;
+}
+
+.about-text > a:link {
+    color: #b17e69;
+}
+
+.about-text > a:visited {
+    color: #b17e69;
 }

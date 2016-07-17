@@ -2,8 +2,9 @@
 const electron = require('electron')
 const path = require('path')
 const {app, BrowserWindow, webFrame, ipcMain} = require('electron')
+const menu = require('./lib/menu.js')
 
-let noteWindow = null, loginWindow = null, aboutWindow = null
+let noteWindow = null, loginWindow = null
 var internetFlag = false
 
 function createWindow(isConnected) {
@@ -62,6 +63,7 @@ function createWindow(isConnected) {
 }
 
 app.on('ready', () => {
+    menu.init()
     require('dns').resolve('note.t.tt', function(err) {
         if (err) {
             if (noteWindow === null) {
@@ -79,7 +81,6 @@ app.on('ready', () => {
 app.on('activate', function () {
   // On OS X it's common to re-create a window in the app when the
   // dock icon is clicked and there are no other windows open.
-
   require('dns').resolve('note.t.tt', function(err) {
       if (err) {
           if (noteWindow === null) {
@@ -122,39 +123,4 @@ ipcMain.on('login-did-show', (event, arg) => {
     if (!internetFlag) {
         loginWindow.webContents.send('internet-connected', 'false')
     }
-})
-
-ipcMain.on('need-show-about', (event, arg) => {
-    if (aboutWindow != null) {
-        aboutWindow.focus()
-        return
-    }
-    aboutWindow = new BrowserWindow({
-        title: '关于',
-        width: 350,
-        height: 500,
-        frame: true,
-        center: true,
-        parent: noteWindow,
-        maximizable: false,
-        alwaysOnTop: true,
-        resizable: false,
-        autoHideMenuBar: true,
-        titleBarStyle: 'hidden-inset',
-        webPreferences: {
-            javascript: true,
-            webSecurity: false,
-            nodeIntegration: false
-        }
-    })
-
-    aboutWindow.loadURL(`file://${__dirname}/lib/Window/About/about.html`)
-    // aboutWindow.openDevTools()
-    aboutWindow.on('closed', () => {
-        aboutWindow = null
-    })
-})
-
-ipcMain.on('app-will-close', (event, arg) => {
-    app.quit()
 })
