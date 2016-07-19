@@ -27,6 +27,10 @@ cd ElectronSmartisanNotes
 npm install && npm start
 ```
 
+# Thanks
+
+小大侠 - Provide icon.
+
 # TODO
 * Add muti-language support.
 * Muti account support.
