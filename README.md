@@ -17,6 +17,8 @@ A third part Smartisan Notes client built with electron. Now it is still under d
 
 # Installation
 
+Now, package for macOS is ready. You can download it through the [release page](https://github.com/HawkinsZhao/ElectronSmartisanNotes/releases).
+
 To get the latest version, you need to compile it by yourself with this simple bash codes.
 
 ```bash
