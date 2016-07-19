@@ -1,6 +1,6 @@
 # Electron Smartisan Notes
 
-A third part Smartisan Notes client built with electron.
+A third part Smartisan Notes client built with electron. Now it is still under development, package job is still in progress. I welcome every one join this project to code, package, and test.
 
 [![NPM](https://img.shields.io/badge/npm-3.7.3-red.svg)]()
 [![Electron](https://img.shields.io/badge/electron-1.2.6-94E6F8.svg)]()
@@ -11,30 +11,22 @@ A third part Smartisan Notes client built with electron.
 
 ![ElectronSmartisanNotes](https://raw.githubusercontent.com/HawkinsZhao/ElectronSmartisanNotes/master/scrrenshots/img1.pn://raw.githubusercontent.com/HawkinsZhao/ElectronSmartisanNotes/master/scrrenshots/img1.png)
 
-# Attention
-This project is still under development, the user experience won't be so good.
-
-And app packaging is in progress.
-
 # Features
-* Application-like UI
-* Scaled UI with smaller controllers
+* Scaled and adjusted UI with smaller controllers
 * Native integration
-* Adjusted UI
 
 # Installation
+
+To get the latest version, you need to compile it by yourself with this simple bash codes.
+
 ```bash
 git clone https://github.com/HawkinsZhao/ElectronSmartisanNotes.git
 cd ElectronSmartisanNotes
 npm install && npm start
 ```
 
-# In Progress
-You may have noticed, there are few commits this days, since I sucked in other projects and this project needs to rebuild. Don't worry, I will be back soon.
-
 # TODO
 * Add muti-language support.
-* Better icon.
 * Muti account support.
 
 
